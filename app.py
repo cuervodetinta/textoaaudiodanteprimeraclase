@@ -13,7 +13,7 @@ st.markdown('<style>body {background-color: #fce6fb;} .stApp {background-color: 
 st.title("Conversión de Texto a Audio")
 
 image = Image.open("cuervito.png")
-st.image(image, width=350)
+st.image(image, use_column_width=True)
 
 with st.sidebar:
     st.subheader("Esrcibe y/o pega un texto para poder escucharlo.")
