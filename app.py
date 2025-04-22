@@ -8,10 +8,10 @@ from PIL import Image
 import base64
 
 st.title("Conversión de Texto a Audio")
-image = Image.open('gato_raton.png')
+image = Image.open('cuervito.png')
 st.image(image, width=350)
 with st.sidebar:
-    st.subheader("Esrcibe y/o selecciona texto para ser escuchado.")
+    st.subheader("Esrcibe y/o pega un texto para poder escucharlo.")
 
 
 try:
@@ -19,10 +19,8 @@ try:
 except:
     pass
 
-st.subheader("Una pequeña Fábula.")
-st.write('El cuervo voló durante días buscando el árbol más alto del mundo. Quería ver el fin del cielo. Al encontrarlo, se posó en la rama más alta y miró hacia arriba, pero todo seguía igual: azul, infinito, sin final. Entonces pensó que tal vez el cielo era él mismo, y en su orgullo, soltó un graznido tan fuerte que se cayó del susto.'
-        
-        )
+st.subheader("Sobre cuervos...")
+st.write("El cuervo voló durante días buscando el árbol más alto del mundo. Quería ver el fin del cielo. Al encontrarlo, se posó en la rama más alta y miró hacia arriba, pero todo seguía igual:  azul, infinito, sin final. Entonces pensó que tal vez el cielo era él mismo, y en su orgullo, soltó un graznido tan fuerte que se cayó del susto..")
            
 st.markdown(f"Quieres escucharlo?, copia el texto")
 text = st.text_area("Ingrese El texto a escuchar.")
